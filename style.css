@@ -1,0 +1,183 @@
+:root{
+    --heading-font-family: 'Poppins', sans-serif;
+    --body-font-family: 'Open Sans';
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --color-1:hsl(257, 40%, 49%);
+    --color-2:hsl(228, 45%, 44%);
+    --color-3: #fff;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-1);
+    background-image: url(./images/bg-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: var(--body-font-family);
+    color: var(--color-3);
+
+}
+
+.logo{
+    margin: 37px 35px;
+}
+
+.image{
+    margin: 0px 38px;
+}
+
+h2{
+    font-family: var(--heading-font-family);
+    font-weight: var(--font-weight-bold);
+    font-size: 3rem;
+    max-width: 85%;
+    margin: 60px 50px 40px;
+}
+
+p{
+    font-family: var(--body-font-family);
+    font-weight: var(--font-weight-regular);
+    line-height: 2;
+    margin: 0% 65px 3% 50px;
+}
+
+.register-button{
+    border: none;
+    margin-bottom: 20%;
+    padding: 15px 90px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    color: var(--color-1);
+    margin: 0% 0 3% 6%;
+    text-decoration: none;
+}
+
+.register-button:hover{
+    opacity: 0.8;
+}
+
+.social-icons-box{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin-right: 10px;
+}
+
+.social-icons-box a{
+    border: 2px solid var(--color-3);
+    border-radius: 50%;
+    color: var(--color-3);
+    text-decoration: none;
+    margin-left: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+}
+
+@media (max-width: 992px) and (max-width: 960px) {
+    body{
+        text-align: center
+    };
+
+    .logo{
+        display: flex;
+    }
+    .social-icons-box{
+        justify-content: center;
+    }
+
+    .social-icons-box a{
+        margin-left: 25px;
+    }
+
+    .register-button{
+        margin: 20px 0 80px;
+    }
+}
+
+@media (max-width:987px){
+    body{
+        text-align: center;
+        max-width:100%;
+
+    };
+
+    .logo{
+        display: flex;
+    }
+    .social-icons-box{
+        justify-content: center;
+    }
+
+    .social-icons-box a{
+        margin-left: 25px;
+    }
+
+    .register-button{
+        margin: 20px 40px 80px;
+    }
+}
+
+
+@media (max-width:800px){
+    .image{
+        max-width: 80%;
+    }
+    .social-icons-box{
+        text-align: center;
+        
+    }
+
+    
+}
+
+@media (min-width: 380px){
+    .social-icons-box{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 376px){
+    body{
+       
+        background-image: url(./images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .logo{
+        max-width: 45%;
+    }
+
+    .social-icons-box{
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-left: 30px;
+    }
+
+    .image{
+        margin: 0px 25px;
+    }
+
+    h2 {
+        
+    font-size: 1.8rem;
+    max-width: 95%;
+    margin: 60px 25px 3% 40px;
+  }
+
+  p {
+   
+    margin: 0% 25px 3% 50px;
+    font-size: 15px;
+  }
+}
+
